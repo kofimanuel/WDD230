@@ -1,0 +1,43 @@
+body {
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+header, footer {
+    text-align: center;
+    background-color: darkred;
+    border-radius: 15px;
+    color: white;
+    margin: 2rem auto;
+    height: 120px;
+}
+.last {
+    color: yellow;
+} 
+img {
+    width: 200px;
+    height: 250px;
+    float: right;
+    margin: -145px;
+    margin-right: -30px;
+    box-shadow: 5px 3px 3px rgb(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
+}
+footer {
+    height: 100px;
+}
+footer section {
+    padding-top: 20px;
+
+}
+.byui {
+    color: white;
+    text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+    img {
+        float: none;
+        margin: 0 auto;
+    }
+}
