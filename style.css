@@ -4,6 +4,11 @@ body {
     line-height: 1.5;
     font-family: 'Franklin Gothic Medium', sans-serif;
 }
+h1 {
+    font-size: 40px;
+    padding: 30px;
+    margin-right: 200px; 
+}
 header, footer {
     text-align: center;
     background-color: darkred;
@@ -25,11 +30,13 @@ img {
     border-top-right-radius: 5px;
 }
 footer {
-    height: 100px;
+    height: 73px;
+}
+footer section p {
+    line-height: 0.3; 
 }
 footer section {
-    padding-top: 20px;
-
+    padding: 5px;
 }
 .byui {
     color: white;
@@ -38,6 +45,10 @@ footer section {
 @media screen and (max-width: 500px) {
     img {
         float: none;
+        display: block;
         margin: 0 auto;
+    }
+    body p {
+        text-align: center;
     }
 }
