@@ -48,7 +48,8 @@ footer section {
         display: block;
         margin: 0 auto;
     }
-    body p {
-        text-align: center;
+    h1 {
+        font-size: 30px;
+        display: inline;
     }
 }
