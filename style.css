@@ -48,9 +48,11 @@ footer section {
         display: block;
         margin: 0 auto;
     }
+    header {
+        display: inline;
+    }
     h1 {
         font-size: 30px;
-        display: inline;
         text-align: center;
     }
 }
