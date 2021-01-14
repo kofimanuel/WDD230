@@ -2,7 +2,8 @@ body {
     max-width: 760px;
     margin: 0 auto;
     line-height: 1.5;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family: 'Fraunces', serif;
+
 }
 h1 {
     font-size: 40px;
@@ -51,8 +52,5 @@ footer section {
     header {
         display: inline;
     }
-    h1 {
-        font-size: 30px;
-        text-align: center;
-    }
+   
 }
