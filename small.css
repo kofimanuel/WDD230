@@ -1,0 +1,45 @@
+body {
+    max-width: 85%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Fraunces', sans-serif;
+    height: 100%;
+}
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;   
+}
+h2 {
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+header {
+    margin: 10px;
+    padding: 0.75rem;
+}
+header, footer {
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    margin: 2rem auto;
+    height: auto;
+}
+.last {
+    color: yellow;
+} 
+header img {
+    width: 200px;
+    height: auto;
+}
+footer {
+    padding: 5px;
+}
+.byui {
+    color: white;
+    text-decoration: underline;
+}
+main {
+    margin: auto;
+}
