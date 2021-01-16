@@ -1,0 +1,50 @@
+/*Phone view-- The smallest
+Heading: Bodoni Moda, 
+Paragraph: PT Serif
+ ****************************/
+ body {
+    font-family: 'PT Serif', serif;  
+ }
+ h2 {
+     border-bottom: 2px double;
+     padding: 0.5em;
+ }
+ header, footer {
+     background-color: darkred;
+     color: whitesmoke;
+     max-width:500px;
+     margin: 0 auto;
+     border-radius: 10px;
+     text-align: center;
+ }
+ main {
+     display: grid;
+     grid-template-columns: 1fr;
+     max-width: 767px;
+     justify-items: center;
+     font-size: 0.5;
+ }
+
+ main section:nth-child(1) {
+    grid-column: span 1;
+ }
+ main section:nth-child(2) {
+    grid-column: span 1;
+ }
+ main section:nth-child(3) {
+    grid-column: span 1;
+ }
+ img {
+     max-width: 300px;
+     align-items: center;
+ }
+ main section {
+     padding: 0 1rem;
+     border: 3px solid black;
+     border-radius: 10px;
+     margin: 0.5rem ;
+ }
+
+
+ 
+ 
