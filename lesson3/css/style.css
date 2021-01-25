@@ -46,7 +46,7 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: visible;
 }
 
 nav ul li a {
@@ -64,26 +64,87 @@ li a:hover {
 }
 
 main {
-	max-width: 80%;
+	max-width: 85%;
+}
+
+section p a {
+	color: darkred;
+	text-decoration: none;
+}
+
+section p a:hover {
+	color: red;
+}
+
+table, th, td{
+	border: 1px solid darkred;
+	font-family: calibri, serif;
+}
+
+table th, table td {
+	text-align: left;
+	padding: 5px;
+}
+
+table .sample1, .sample2, .sample3 {
+	font-size: 30px;
+	font-weight: bolder;
+	padding: 6px;
+}
+
+.sample1 {
+	font-family: Georgia;
+}
+
+.sample2 {
+	font-family: cambria;
+}
+
+.sample3 {
+	font-family: "Times New Roman";
+}
+
+.color1 {
+	background-color: azure;
+	padding: 20px;
+	width: 40px;
+}
+
+.color2 {
+	background-color: black;
+	padding: 20px;
+}
+
+.color3 {
+	background-color: darkred;
+	padding: 20px;
+}
+
+.color4 {
+	background-color: gold;
+	padding: 20px;
+}
+
+section li {
+	font-family: calibri, serif;
+	font-size: 1.04rem;
 }
 
 @media only screen and (min-width: 37.5em) {
 
 	nav {
-		max-width: 60%;
+		max-width: 70%;
 	}
 
 	nav ul {
 		display: flex;
 	}
 
-	nav a {
-		font-size: 1rem;
-	}
 }
 
 @media only screen and (min-width: 60em) {
 	nav a {
 		font-size: 1.2rem;
+
 	}
 }
