@@ -1,0 +1,52 @@
+@media only screen and (min-width: 64em) {
+
+	header picture img {
+    width: 140px;
+  }
+
+  header .heading h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  main {
+    max-width: 64em;
+    margin: auto;
+  }
+
+  footer {
+    max-width: 66em;
+    margin: auto;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul,
+  nav ul.hidden {
+    display: flex;
+    border-top: none;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 1em;
+  }
+
+  nav ul li.active a {
+    box-shadow: 0 2px 0 hsl(40, 80%, 30%);
+  }
+
+  nav ul li:hover a {
+    box-shadow: 0 4px darkred;
+  }
+	
+}

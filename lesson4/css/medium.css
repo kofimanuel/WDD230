@@ -1,0 +1,18 @@
+@media only screen and (min-width: 32.5em) {
+	header picture img {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  main {
+    max-width: 48em;
+    margin: auto;
+  }
+}
