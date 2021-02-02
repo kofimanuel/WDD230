@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SoloLearn Tutorials</title>
+		<script>
+			function assOps(){
+				let x= parseFloat(document.getElementById("first").value);
+				let y= parseFloat(document.getElementById("second").value);
+				document.getElementById('display').innerHTML= (x-=y+=5);
+			}
+
+			var age= 20;
+			var isAdult= (age<40) ? "Too young": "Old";
+			document.write(isAdult+'<br>')
+		</script>
+	</head>
+
+	<body>
+		Enter number: <input type="text" size="5" id="first"><br><br>
+		Enter number: <input type="text" size="5" id="second"><br>
+		<button type="button" onclick="assOps()">Click here</button>
+		<div id="display"></div><br><br>
+		<div id="display2"></div>
+
+	</body>
+</html>

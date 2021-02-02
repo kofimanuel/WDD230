@@ -8,5 +8,5 @@ document.getElementById('current-date').textContent= dateFormatted;
 
 
 function navMenu() {
-  document.getElementById("nav-menu").classList.toggle("hidden");
+  document.getElementById('nav-menu').classList.toggle('hidden');
 }
