@@ -1,0 +1,138 @@
+body {
+	font-size: 16px;
+	font-family: "Times New Roman", sans-serif;
+	line-height: 1.25;
+	background-color: azure;
+	height: 100%;
+
+}
+
+header {
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header picture img {
+	width: 100px;
+	height: auto;
+	}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	}
+
+.heading h1 {
+	font-size: 2rem;
+	margin: 0 0 0 17px;
+	color: darkred;
+	}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: 1rem;
+	font-weight: bolder;
+	}
+
+nav {
+  background: darkred;
+  width: 100%;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+
+nav button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+
+nav .hidden {
+ display: none;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: auto;
+  
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li.active a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: darkred;
+  font-weight: bold;
+}
+
+main h2 {
+	text-align: center;
+}
+
+section {
+	text-align: center;
+}
+
+.grid-box img {
+  max-width: 280px;
+}
+
+.grid-box {
+ 	display: grid;
+ 	grid-gap: 20px;
+ 	padding: 20px;
+}
+
+.grid-box div {
+	width: 280px;
+	box-shadow: 1px 1px 4px 1px #888;
+	border-radius: 2px;
+	background-color: white;
+	overflow: hidden;
+}
+
+.grid-box p {
+	padding: 15px;
+	font-size: 1.2em;
+}
+footer {
+	font-size: 18px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.animation {
+	color: gold;
+	animation: light 5s infinite;
+}
+@keyframes light {
+	50% {
+		color: darkred;
+	}
+}
+}

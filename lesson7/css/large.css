@@ -1,0 +1,33 @@
+@media only screen and (min-width: 64em) {
+
+	header picture img {
+    width: 140px;
+  }
+
+  header .heading h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  main {
+    max-width: 64em;
+    margin: 0 auto;
+  }
+
+  .grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+  }
+
+  footer {
+    max-width: 66em;
+    margin: auto;
+  }
+
+	
+}
