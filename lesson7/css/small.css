@@ -92,9 +92,16 @@ main h2 {
 	text-align: center;
 }
 
-section {
-	text-align: center;
+main {
+	width: 100%;
+	padding-bottom: 20px;
 }
+
+.grid-box, h2 {
+	text-align: center;
+	margin
+}
+
 
 .grid-box img {
   max-width: 280px;
@@ -102,8 +109,8 @@ section {
 
 .grid-box {
  	display: grid;
+ 	justify-content: center;
  	grid-gap: 20px;
- 	padding: 20px;
 }
 
 .grid-box div {
@@ -115,8 +122,10 @@ section {
 }
 
 .grid-box p {
-	padding: 15px;
+	margin-top: 5px;
+	margin-left: 5px;
 	font-size: 1.2em;
+	text-align: left;
 }
 footer {
 	font-size: 18px;

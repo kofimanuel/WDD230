@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 60em) {
 
 	header picture img {
     width: 140px;
@@ -12,16 +12,19 @@
     font-size: 28px;
   }
 
-  main {
-    max-width: 64em;
-    margin: 0 auto;
-  }
-
   .grid-box {
     display: grid;
     grid-template-columns: repeat(3, 320px);
-    grid-auto-rows: 300px;
     grid-gap: 10px;
+    justify-content: center;
+  }
+
+  .grid-box {
+    padding: 20px;
+  }
+
+  .grid-box div:hover {
+    box-shadow: 0 0 20px #333;
   }
 
   footer {

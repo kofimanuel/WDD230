@@ -40,19 +40,16 @@
   }
 
   main h2 {
-    margin-left: 10px;
-    text-align: left;
+    text-align: center;
   }
 
   .grid-box {
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 320px 320px;
     grid-gap: 10px;
   }
 
-  main {
-    max-width: 48em;
-    width: 99%;
+  .grid-box div {
+    margin: 0 auto;
   }
 }
