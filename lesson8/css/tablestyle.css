@@ -1,0 +1,34 @@
+body {
+	font-family: Ubuntu, sans-serif;
+	font-size: 1.3em;
+}
+
+table {
+	margin: 0 auto;
+	width: 70%;
+	box-shadow: 8px 8px 5px lightblue;
+}
+
+table, caption, th, td {
+	border: 2px solid #eee;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 10px;
+}
+
+table tr:nth-child(even) {
+	background-color: #e7ffed;
+}
+
+table tr:nth-child(odd) {
+	background-color: #e7f0ed;
+}
+
+#blue {
+	color: white;
+	background-color: #628ca6;
+}
+
+thead tr:nth-child(1), tfoot tr:nth-child(1) {
+	background-color: #7fb9c2;
+}
