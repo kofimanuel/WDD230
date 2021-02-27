@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="This is a site built for preston town weather gallery, Idaho by Emmanuel Asamoah Adjei in WDD230">
+			<meta name="author" content="Emmanuel Asamoah Adjei">
+			<meta name="keywords" content="weather, gallery, Preston, town, Idaho">
+			<title>Weather Gallery</title>
+			<link rel="shortcut icon" href="./images/fav-icon.ico">
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+			<link rel="stylesheet" type="text/css" href="./css/small.css">
+			<link rel="stylesheet" type="text/css" href="./css/medium.css">
+			<link rel="stylesheet" type="text/css" href="./css/large.css">
+		</head>
+		<body>
+			<header>
+				<picture>
+					<img src="./images/weather-logo.png" alt="Abstract representation of the half moon and the clouds">
+				</picture>
+				<section class="heading">
+					<h1>tothe<span class="animation">Horizon</span>.com &#127781;</h1>
+					<div class="motto">The active home of weather!</div>
+				</section>
+			</header>
+			<nav>
+				<button type="button" onclick="navMenu()">&equiv; Menu</button>
+				<ul id="nav-menu" class="hidden">
+					<li><a href="#" title="Homepage">Home</a></li>
+					<li><a href="#" title="Preston Community Weather">Preston</a></li>
+					<li><a href="#" title="Soda Springs">Soda Springs</a></li>
+					<li><a href="#" title="Fish Haven">Fish Haven</a></li>
+					<li class="active"><a href="#" title="Storm Center">Storm Center</a></li>
+					<li><a href="#" title="Gallery">Gallery</a></li>
+				</ul>
+			</nav>
+			<main>
+				<h2>Report a Storm</h2>
+				<form action="./thanks.html" method="GET">
+					<h3>Contact Info</h3>
+					<label for="fname">Full Name</label><br>
+					<input type="text" id="fname" name="full-name" pattern="[A-Za-z].{5,}" required><br><br>
+
+					<label for="mail">Email</label><br>
+					<input type="email" id="mail" name="email" placeholder="eg: myemail@gmail.com"><br><br>
+
+					<label for="phone">Phone Number</label><br>
+					<input type="tel" id="phone" name="phone-number" required><br><br>
+
+					<label for="zip">Zip Code</label><br>
+					<input type="number" id="zip" name="zip-code" required><br><br>
+					<hr><br><br>
+
+					<h3>Storm Details</h3>
+					<label for="date">Storm Date</label><br>
+					<input type="date" name="storm-date" id="date"><br><br>
+
+					<label for="list">Storm Type</label><br>
+					<input list="storms" name="storm" id="list">
+					<datalist id="storms">
+						<option>Flash Flood</option>
+						<option>Hail</option>
+						<option>Hurricane</option>
+						<option>Thunderstorm</option>
+						<option>Tornado</option>
+					</datalist><br><br>
+
+					<label for="severity">Storm Severity</label><span>&nbsp; &nbsp; &nbsp; &nbsp;</span><span id="rating"></span><br>
+					<input type="range" id="severity" name="storm-severity" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><br>
+					<datalist id="tickmarks">
+						<option value="0">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+						<option value="6">
+						<option value="7">
+						<option value="8">
+						<option value="9">
+						<option value="10">
+					</datalist><br>
+
+					<label for="region">Storm Region</label><br>
+					<select name="regions" id="region">
+						<option disabled selected>Select Region</option>
+						<option>Preston</option>
+						<option>Soda Spring</option>
+						<option>Fish Haven</option>
+					</select><br><br>
+
+					<div>In Danger?</div>
+					<input type="radio" id="yes" name="danger" value="yes">
+					<label for="yes">Yes</label><br>
+					<input type="radio" id="maybe" name="danger" value="maybe">
+					<label for="maybe">Maybe</label><br>
+					<input type="radio" id="no" name="danger" value="no">
+					<label for="no">No</label><br><br>
+					<hr><br>
+
+					<label for="info"><h3 class="info">Additional Info</h3></label><br>
+					<textarea id="info" name="information" rows="10" cols="30">Type any additional information here</textarea><br>
+
+					<input type="submit" value="Report" class="submit">
+				</form>
+			</main>
+
+			<footer>
+				<p>
+					&copy; <span id="current-year"></span> | <a href="#" title="Homepage">tothe<Span class="animation">Horizon</Span>.com</a> | Emmanuel Asamoah Adjei <br>
+					<span id="current-date"></span>
+				</p>
+			</footer>
+		</body>
+		<script src="./js/script.js"></script>
+	</html>

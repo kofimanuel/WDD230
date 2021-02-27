@@ -1,0 +1,45 @@
+@media only screen and (min-width: 32.5em) {
+	header picture img {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  nav ul,
+  nav ul.hidden {
+    display: flex;
+    border-top: none;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+   nav ul li a {
+    display: block;
+    padding: .7em;
+    font-size: 18px;
+  }
+
+  nav ul li.active a {
+    box-shadow: 0 2px 0 hsl(40, 80%, 30%);
+  }
+
+  nav ul li:hover a {
+    box-shadow: 0 4px darkred;
+  }
+
+  main h2 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+	
+	<form>
+		<h2>Text Field</h2>
+		<label for="name">First Name: </label><br>
+		<input type="text" maxlength="8" minlength="4" id="name" size="20" ><br><br>
+		<label for="surname">Last Name: </label><br>
+		<input type="text" maxlength="8" minlength="4" id="surname" size="20"><br><br>
+		<input type="Submit">
+	</form>
+	<br><br>
+	<form>
+		<h2>Radio Buttons</h2>
+		<input type="radio" id="male" value="male" name="gender">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" value="female" name="gender">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" value="other" name="gender">
+		<label for="other">Other</label><br>
+	</form>
+	<br><br>
+	<form>
+		<h2>Checkboxes</h2>
+	</form><br><br><br>
+	<h2>Border</h2>
+	<table>
+		<caption></caption>
+		<tr>
+			<th>Name</th>
+			<th>Contact</th>
+			<th>Religion</th>
+		</tr>
+		<tr>
+			<td>Emmanuel</td>
+			<td>Secretary</td>
+			<td>Christian</td>
+		</tr>
+		<tr>
+			<td>Evans</td>
+			<td>Emmanuel</td>
+			<td>Christian</td>
+		</tr>
+		<tr>
+			<td>Anthony</td>
+			<td>Secretary</td>
+			<td>Christian</td>
+		</tr>
+	</table>
+
+	<style>
+
+	table {
+		width: 100%;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	th {
+		text-align: left;
+		padding: 15px;
+	}
+
+	td {
+		padding: 15px;
+	}
+
+	table tr:nth-child(odd) {
+		background-color: lightblue;
+	}
+
+	th {
+		background-color: yellow;
+	}
+	</style>
