@@ -1,0 +1,34 @@
+body {
+	font-family: 'PT Serif', serif;
+	text-align: center;
+}
+
+h1 {
+	color: darkred;
+}
+
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 5px;
+}
+
+img {
+	width: 200px;
+}
+
+section {
+	border: 1px solid black;
+	background-color: lightgray;
+	border-radius: 8px;
+}
+
+footer {
+	padding: 10px;
+	background-color: darkred;
+	color: white;
+}
+
+@media and screen(min-width: 20em) {
+}
