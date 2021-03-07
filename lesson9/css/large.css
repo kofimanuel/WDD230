@@ -1,0 +1,46 @@
+@media only screen and (min-width: 64em) {
+
+	header picture img {
+    width: 140px;
+  }
+
+  header .heading h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  main {
+    max-width: 64em;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    position: relative;
+  }
+
+  .map {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+    display: inline;
+    float: left;
+    max-width: 300px;
+  }
+
+  .contact-info h3, 
+  .contact-info p, 
+  .social {
+    text-align: right;
+    margin-right: 6rem;
+  }
+
+  footer {
+    max-width: 66em;
+    margin: auto;
+  }
+
+	
+}

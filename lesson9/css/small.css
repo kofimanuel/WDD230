@@ -1,0 +1,161 @@
+body {
+	font-size: 16px;
+	font-family: "Times New Roman", sans-serif;
+	line-height: 1.25;
+	background-color: azure;
+	height: 100%;
+}
+aside {
+	padding: 20px;
+	background-color: gold;
+}
+header {
+	padding: 5px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+header picture img {
+	width: 100px;
+	height: auto;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+}
+.heading h1 {
+	font-size: 2rem;
+	margin: 0 0 0 17px;
+	color: darkred;
+}
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+nav {
+  background: darkred;
+  width: 100%;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+nav button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+nav .hidden {
+ display: none;
+}
+nav ul {
+  padding-left: 0;
+  margin: auto;
+}
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li.active a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: darkred;
+  font-weight: bold;
+}
+.title {
+	text-align: center;
+	font-size: 39px;
+	color: darkred;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bolder;
+}
+img {
+	width: 321px;
+}
+.images {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+main section {
+	padding-bottom: 20px;
+}
+
+section .towns {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+section .towns div {
+	text-align: center;
+	background-color: lightgray;
+}
+section .towns h2{
+	font-size: 42px;
+	text-shadow: 1px 1px 1px black;
+	color: darkred;
+}
+section .towns h3 {
+	font-size: 18px;
+	font-style: italic;
+	margin-top: -30px;
+}
+section .towns p {
+	font-size: 16px;
+	font-weight: bolder;
+}
+.contact-info {
+	display: block;
+	margin: 10px auto;
+	border: 1px solid #000;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+}
+.contact-info h3 {
+	color: darkred;
+}
+.map {
+	display: none;
+}
+.social{
+	text-align: center;
+}
+.social img {
+	width: 35px;
+}
+footer {
+	font-size: 18px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  padding: 0.25rem;
+}
+footer p a, div p a {
+	text-decoration: none;
+}
+.animation {
+	color: gold;
+	animation: light 5s infinite;
+}
+@keyframes light {
+	50% {color: darkred;}
+}
