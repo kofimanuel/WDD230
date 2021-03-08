@@ -37,35 +37,27 @@
   nav ul li:hover a {
     box-shadow: 0 4px darkred;
   }
-
-  .hero {
-    width: 1050px;
-  }
-
-  .forecast {
-    display: block;
-  }
-
-  table {
-    margin: 0 auto;
-    width: 30%;
-    border-collapse: collapse;
-  }
-
-  table, tr th {
-    border: 1px solid black;
-  }
-
-  tr:nth-child(1) {
-    background-color: gold;
-  }
-
-  .float {
-    float: right;
-  }
-
   main {
     max-width: 48em;
     margin: auto;
+  }
+
+  .towns section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .imgContainer,.textContainer {
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 64rem) {
+    .towns section:nth-of-type(even) {
+      display: flex;
+      flex-flow: row-reverse;
+    }
+    .towns section:nth-of-type(even) .imgContainer, .towns section:nth-of-type(even) .textContainer {
+      width: 50%;
+    }
   }
 }

@@ -3,11 +3,6 @@ body {
 	font-family: "Times New Roman", sans-serif;
 	line-height: 1.25;
 	background-color: azure;
-	height: 100%;
-}
-aside {
-	padding: 20px;
-	background-color: gold;
 }
 header {
 	padding: 5px;
@@ -51,7 +46,7 @@ nav button {
   width: 100%;
 }
 nav .hidden {
- display: none;
+ 	display: none;
 }
 nav ul {
   padding-left: 0;
@@ -77,47 +72,60 @@ nav ul li a:hover {
   font-weight: bold;
 }
 .title {
+	font-family: 'PT Serif', serif;
 	text-align: center;
 	font-size: 39px;
 	color: darkred;
 	text-shadow: 1px 1px 1px black;
-	font-weight: bolder;
+	font-weight: bold;
 }
 img {
 	width: 321px;
 }
 .images {
 	display: grid;
-	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 10px;
 }
-
 main section {
 	padding-bottom: 20px;
+	display: grid;
+	grid-gap: 10px;
 }
 
 section .towns {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
-section .towns div {
-	text-align: center;
+
+.towns section {
 	background-color: lightgray;
+	padding: 5px;
 }
-section .towns h2{
+
+.textContainer {
+	text-align: center;
+	padding: 10px;
+}
+
+.textContainer p {
+	font-size: 1.15em;
+}
+
+.towns h2{
+	font-family: 'PT Serif', serif;
 	font-size: 42px;
 	text-shadow: 1px 1px 1px black;
 	color: darkred;
 }
-section .towns h3 {
-	font-size: 18px;
+.textContainer .motto {
+	font-size: 16px;
 	font-style: italic;
+	font-size: 1.25rem;
+	margin: 0 auto;
 	margin-top: -30px;
 }
-section .towns p {
-	font-size: 16px;
-	font-weight: bolder;
+.imgContainer {
+	text-align: center;
 }
 .contact-info {
 	display: block;
