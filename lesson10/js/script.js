@@ -53,11 +53,8 @@ fetch(apiURL)
     let finalResult = (t <= 50 && s > 3) ? `${f} °C` : 'N/A';
     document.getElementById('chill').textContent = finalResult;
   });
-
-
 //Forecast
 const forecastURL= 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
-
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -67,7 +64,6 @@ fetch(forecastURL)
     let iconsArr = [];
     let descIcon = [];
     let tempArr = [];
-
     //Arrays
     for(let i = 0; i < jsObject.list.length; i++) {
       if (jsObject.list[i].dt_txt.indexOf('18:00:00') > -1) {
@@ -92,7 +88,6 @@ fetch(forecastURL)
       divCard.appendChild(iconImg);
       divCard.appendChild(tempP);
       document.getElementById("openForecast").appendChild(divCard);
-
       //Assigning values
       document.getElementById(`dayOfWeek${i + 1}`).textContent = `${daysArr[i]}`;
       document.getElementById(`icon${i + 1}`).setAttribute('src', `https://openweathermap.org/img/wn/${iconsArr[i]}@2x.png`);
