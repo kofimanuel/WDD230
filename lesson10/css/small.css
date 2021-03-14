@@ -126,6 +126,10 @@ hr {
 	margin-top: -5px;
 }
 
+h3 .center {
+	display: hidden;
+}
+
 .forecast {
 	display: none;
 }
