@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This is a weather site built for preston town, Idaho by Emmanuel Asamoah Adjei in WDD230">
+		<meta name="author" content="Emmanuel Asamoah Adjei">
+		<meta name="keywords" content="weather, site, Preston, town, Idaho">
+		<title>Weather | Preston, Idaho </title>
+		<link rel="shortcut icon" href="./images/fav-icon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/small.css">
+		<link rel="stylesheet" type="text/css" href="./css/medium.css">
+		<link rel="stylesheet" type="text/css" href="./css/large.css">
+	</head>
+	<body>
+		<!--Sunday Banner-->
+		<aside><script></script></aside>
+		<header>
+			<picture>
+				<img src="./images/weather-logo.png" alt="Abstract half moon">
+			</picture>
+			<section class="heading">
+				<h1>tothe<span class="animation">Horizon</span>.com &#127781</h1>
+				<div class="motto">The active home of weather!</div>
+			</section>
+		</header>
+		<nav>
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="nav-menu" class="hidden">
+				<li><a href="#" title="Homepage">Home</a></li>
+				<li class="active"><a href="#" title="Preston Community Weather">Preston</a></li>
+				<li><a href="#" title="Soda Springs">Soda Springs</a></li>
+				<li><a href="#" title="Fish Haven">Fish Haven</a></li>
+				<li><a href="#" title="Storm Center">Storm Center</a></li>
+				<li><a href="#" title="Gallery">Gallery</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2 class="center">Preston Idaho</h2>
+			<div class="herodiv">
+				<picture class="hero">
+					<source media="(max-width: 600px)" srcset="images/hero.jpg">
+					<source media="(max-width: 990px)" srcset="images/heromedium.jpg">
+					<source media="(max-width: 1300px)" srcset="images/herolarge.jpg">
+					<img src="images/hero.jpg" alt="banner" class="hero">
+				</picture>
+				<section class="weather-summary">
+					<h3>Weather Summary</h3>
+					<hr>
+					<p>Currently: <span id="temperature"></span> &deg;C</p>
+					<p>High: <span id="high"></span> &deg;C</p>
+					<p>low: <span id="low"></span> &deg;C</p>
+					<p>Wind Chill: <span id="chill"></span></p>
+					<p>Humidity: <span id="humidity"></span>%</p>
+					<p>Wind Speed: <span id="wind"></span> mph</p>
+				</section>
+			</div>
+			<h3 class="center">Five Day Forecast</h3>
+			<div class="forecast" id="openForecast">
+				<!--<table>
+					<tr>
+						<th>Sat</th>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+					</tr>
+					<tr>
+						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>48 &#8451</th>
+						<th><img src="./images/sun.webp" alt="sun" title="Sunny" width="75"><br>37 &#176C</th>
+						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>39 &#176C</th>
+						<th><img src="./images/sun.webp" alt="sun" title="Sunny" width="75"><br>35 &#176C</th>
+						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>50 &#8451</th>
+					</tr>
+				</table>-->
+			</div><br>
+			<article>
+				<picture class="float-container">
+					<img class="float" src="./images/float.jpg" alt="A man in a jacket">
+				</picture>
+				<h3>Lorem Ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, est ridens tamquam te, elit signiferumque sit cu. Veniam populo at vix. Mea amet iusto intellegebat id, nec dicta delenit definitionem ad, doming petentium te vim. Odio hinc nec te, cu sed nonumes nostrum.</p>
+				<p>Idque malis assueverit mei cu. Mazim viderer eam ad. Est odio veri copiosae an, aeterno repudiare in cum, per ad enim cotidieque. Clita epicuri cotidieque vis ea, cum omnis definitionem eu. An imperdiet definiebas complectitur per, essent aperiri persecuti ut usu. Harum indoctum explicari id mea, vis harum deserunt ei, ea diceret vulputate usu.</p>
+				<p>Brute postea periculis mel eu, ea quo movet nusquam. Pri ex vocent percipitur, no utroque mentitum perpetua sed. Eum pericula consequuntur no. Has dicta animal cu, mazim utroque eos ad. No tale imperdiet torquatos per. Quaeque admodum corpora pro in. Mea ipsum putant at, liber explicari no vel, pri mucius civibus quaerendum cu.</p>
+				<p>Brute postea periculis mel eu, ea quo movet nusquam. Pri ex vocent percipitur, no utroque mentitum perpetua sed. Eum pericula consequuntur no. Has dicta animal cu, mazim utroque eos ad. No tale imperdiet torquatos per. Quaeque admodum corpora pro in. Mea ipsum putant at, liber explicari no vel, pri mucius civibus quaerendum cu.</p>
+				<p>Duo eu albucius deserunt constituam. Pro cur reque albucius concludaturque, te his impedit fastidii. Ne pri sint elaboraret, nihil molestie vituperatoribus id nam. Docendi pertinacia ex eum, populo conceptam id mel. Pri in sale idque accusata.</p>
+			</article><br>
+			<div class="contact-info">
+				<h3>tothe<span class="animation">Horizon</span>.com &#127781</h3>
+				<picture>
+					<img class="map" src="./images/map.png" alt="Map">
+				</picture>
+				<p>15452 7th ST E Priston City,<br> Idaho 10987</p>
+				<p>&#9742 +1 233 534 543 523</p>
+				<p>&#9993 <a href="#" title="Contact">contact@tothe<span class="animation">Horizon</span>.com</a></p>
+				<div class="social">
+					<a href="#" target="_blank"><img src="./images/whatsapp2.png" alt="Whatsapp logo"></a>
+					<a href="#" target="_blank"><img src="./images/facebook.png">
+					</div></a>
+				</div>
+			</main>
+			<footer>
+				<p>
+					&copy <span id="current-year"></span> | <a href="#" title="Homepage">tothe<Span class="animation">Horizon</Span>.com</a> | Emmanuel Asamoah Adjei <br>
+					<span id="current-date"></span><br>
+					<p>weather information powered by <a href="https://openweathermap.com" target="_blank">OpenWeatherMap</a></p>
+
+				</p>
+			</footer>
+		</body>
+		<script src="./js/script.js"></script>
+	</html>

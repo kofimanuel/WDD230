@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"  content="Open weather api test">
+		<title>Open Weather API test</title>
+	</head>
+	<body>
+		<h1>OpenWeatherMap.org API Test</h1>
+		<p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+		<hr>
+		<p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+		<script>
+			const apiURL= 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
+			fetch(apiURL)
+				.then((response) => response.json())
+  			.then((jsObject) => {
+    			console.log(jsObject);
+
+    			const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+					const desc = jsObject.weather[0].description;  // note how we reference the weather array
+					document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+					document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+					document.getElementById('icon').setAttribute('alt', desc);
+    			document.getElementById('current-temp').innerHTML = jsObject.main.temp;
+  			});
+		</script>
+	</body>
+	
+</html>

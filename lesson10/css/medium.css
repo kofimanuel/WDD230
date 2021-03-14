@@ -1,0 +1,99 @@
+@media only screen and (min-width: 32.5em) {
+	header picture img {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  header h3 {
+    font-size: 24px;
+  }
+
+  nav ul,
+  nav ul.hidden {
+    display: flex;
+    border-top: none;
+  }
+
+   nav button {
+    display: none;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+   nav ul li a {
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 1em;
+  }
+
+  nav ul li.active a {
+    box-shadow: 0 2px 0 hsl(40, 80%, 30%);
+  }
+
+  nav ul li:hover a {
+    box-shadow: 0 4px darkred;
+  }
+
+  .hero {
+    width: 1050px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .center, h3 .center {
+    font-size: 30px;
+  }
+
+  h3 .center {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .forecast {
+    display: block;
+  }
+
+  .forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+}
+
+.forecast-day {
+    border: 1px solid black;
+    background-color: rgba(240, 206, 102, 0.5);
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+  table {
+    margin: 0 auto;
+    width: 30%;
+    border-collapse: collapse;
+  }
+
+  table, tr th {
+    border: 1px solid black;
+  }
+
+  tr:nth-child(1) {
+    background-color: gold;
+  }
+
+  .float {
+    float: right;
+  }
+
+  main {
+    max-width: 48em;
+    margin: auto;
+  }
+}

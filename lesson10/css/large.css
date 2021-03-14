@@ -17,14 +17,6 @@
     margin: 0 auto;
   }
 
-  .towns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-
-  .towns section {
-    grid-template-columns: 1fr;
-  }
   .contact-info {
     position: relative;
   }
