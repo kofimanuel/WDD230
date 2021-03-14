@@ -90,9 +90,9 @@ nav ul li a:hover {
 	text-align: center;
 }
 
-h3 .center {
+h3.center {
 	display: none;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .herodiv {

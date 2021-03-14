@@ -45,7 +45,7 @@ fetch(apiURL)
     //Wind Chill
     let temper = parseFloat(jsObject.main.temp);
     let windSpeed = parseFloat(jsObject.wind.speed);
-    let windChill = calc(t, s);
+    let windChill = calc(temper, windSpeed);
     function calc(x, y) {
       let result = 35.74 + (0.6215 * x) - (35.75 * Math.pow(y, 0.16)) + (0.4275 * x * Math.pow(y, 0.16));
       return result.toFixed(0);
