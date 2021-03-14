@@ -43,15 +43,15 @@ fetch(apiURL)
     document.getElementById('wind').textContent = jsObject.wind.speed;
 
     //Wind Chill
-    let t = parseFloat(jsObject.main.temp);
-    let s = parseFloat(jsObject.wind.speed);
-    let f = calc(t, s);
+    let temper = parseFloat(jsObject.main.temp);
+    let windSpeed = parseFloat(jsObject.wind.speed);
+    let windChill = calc(t, s);
     function calc(x, y) {
       let result = 35.74 + (0.6215 * x) - (35.75 * Math.pow(y, 0.16)) + (0.4275 * x * Math.pow(y, 0.16));
       return result.toFixed(0);
     }
-    let finalResult = (t <= 50 && s > 3) ? `${f} °C` : 'N/A';
-    document.getElementById('chill').textContent = finalResult;
+    let answer = (temper <= 50 && windSpeed > 3) ? `${windChill} °C` : 'N/A';
+    document.getElementById('chill').textContent = answer;
   });
 //Forecast
 const forecastURL= 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
@@ -74,7 +74,8 @@ fetch(forecastURL)
         tempArr.push(jsObject.list[i].main.temp);
       }
     }
-    for(let i = 0; i < tempArr.length; i++) {
+    //for(let i = 0; i < tempArr.length; i++) {
+    for(let i in tempArr){
       //HTML elements
       let divCard = document.createElement('div');
       let dayP = document.createElement('p');
