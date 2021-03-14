@@ -10,9 +10,9 @@ banner[0].style.top= '0';
 banner[0].style.backgroundColor= 'gold';
 banner[0].style.textAlign= 'center';
 var day= new Date().getDay();
-	if(day== 0){
-		banner[0].style.display= 'block';
-	}
+if(day== 0){
+	banner[0].style.display= 'block';
+}
 
 
 //JS Date
