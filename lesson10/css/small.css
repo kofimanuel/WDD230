@@ -127,7 +127,7 @@ hr {
 }
 
 h3 .center {
-	display: hidden;
+	display: none;
 }
 
 .forecast {
