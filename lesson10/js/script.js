@@ -31,7 +31,7 @@ function navMenu() {
 }
 
 //Json
-const apiURL= 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
+const apiURL= 'https://api.openweathermap.org/data/2.5/weather/?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
 fetch(apiURL)
 	.then((response) => response.json())
 	.then((jsObject) => {
@@ -54,12 +54,12 @@ fetch(apiURL)
     document.getElementById('chill').textContent = answer;
   });
 //Forecast
-const forecastURL= 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
+const forecastURL= 'https://api.openweathermap.org/data/2.5/forecast/?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
     //Variables
-    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     let daysArr = [];
     let iconsArr = [];
     let descIcon = [];

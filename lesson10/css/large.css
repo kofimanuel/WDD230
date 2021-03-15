@@ -17,6 +17,10 @@
     margin: 0 auto;
   }
 
+  h3 .center {
+    display: block;
+  }
+
   .contact-info {
     position: relative;
   }
