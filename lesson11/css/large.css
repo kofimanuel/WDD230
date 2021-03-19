@@ -1,0 +1,83 @@
+@media only screen and (min-width: 64em) {
+
+	header picture img {
+    width: 140px;
+  }
+
+  header .heading h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 28px;
+  }
+
+  /***********Index Page************/
+
+  main {
+    max-width: 64em;
+    margin: 0 auto;
+  }
+
+  .towns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .towns section {
+    grid-template-columns: 1fr;
+  }
+
+  /*****************Preston Page******************/
+   h3.center {
+    display: block;
+  }
+
+  /***************Gallery*************************/
+   .grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+
+  .grid-box {
+    padding: 20px;
+  }
+
+  .grid-box div:hover {
+    box-shadow: 0 0 20px #333;
+  }
+
+  /************Storm Center**************************/
+  
+
+
+  /*********Contact Info and Footer****************/
+  .contact-info {
+    position: relative;
+  }
+
+  .map {
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+    display: inline;
+    float: left;
+    max-width: 300px;
+  }
+
+  .contact-info h3, 
+  .contact-info p, 
+  .social {
+    text-align: right;
+    margin-right: 6rem;
+  }
+
+  footer {
+    max-width: 66em;
+    margin: auto;
+  }
+
+	
+}

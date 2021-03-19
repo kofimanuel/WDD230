@@ -1,0 +1,295 @@
+body {
+	font-size: 16px;
+	font-family: "Times New Roman", sans-serif;
+	line-height: 1.25;
+	background-color: azure;
+}
+header {
+	padding: 5px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+header picture img {
+	width: 100px;
+	height: auto;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+}
+.heading h1 {
+	font-size: 2rem;
+	margin: 0 0 0 17px;
+	color: darkred;
+}
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+nav {
+  background: darkred;
+  width: 100%;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+nav button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+nav .hidden {
+ 	display: none;
+}
+nav ul {
+  padding-left: 0;
+  margin: auto;
+}
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li.active a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: darkred;
+  font-weight: bold;
+}
+
+/****************************INDEX******************************************/
+.title {
+	font-family: 'PT Serif', serif;
+	text-align: center;
+	font-size: 39px;
+	color: darkred;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+}
+img {
+	width: 321px;
+}
+.images {
+	display: grid;
+	grid-gap: 10px;
+}
+main section {
+	padding-bottom: 20px;
+	display: grid;
+	grid-gap: 10px;
+}
+
+section .towns {
+	display: grid;
+	grid-gap: 30px;
+}
+
+.towns section {
+	background-color: lightgray;
+	padding: 5px;
+}
+
+.textContainer {
+	text-align: center;
+	padding: 10px;
+}
+
+.textContainer p {
+	font-size: 1.15em;
+}
+
+.towns h2{
+	font-family: 'PT Serif', serif;
+	font-size: 42px;
+	text-shadow: 1px 1px 1px black;
+	color: darkred;
+}
+.textContainer .motto {
+	font-size: 16px;
+	font-style: italic;
+	font-size: 1.25rem;
+	margin: 0 auto;
+	margin-top: -30px;
+}
+.imgContainer {
+	text-align: center;
+}
+
+/**************PRESTON TOWN*************************************************/
+.center {
+	text-align: center;
+}
+h3.center {
+	display: none;
+	/*text-align: center;*/
+}
+.herodiv {
+	position: relative;
+}
+.hero {
+	max-width: 100%;
+	height: 300px;
+}
+.weather-summary {
+	position: absolute;
+  top: 1rem;
+  left: 2rem;
+	padding: 1.5rem;
+	color: white;
+	height: auto;
+	border: 1px solid #000;
+	background: rgba(139, 0, 0, 0.5);
+ 	box-shadow: 0 0 5px #111;
+}
+/*.weather-summary h3,*/ .weather-summary h3, p {
+	margin: 0 0 0 0;
+	padding: 5px;
+}
+hr {
+	color: black;
+	margin-top: -5px;
+}
+h3 .center {
+	display: none;
+}
+.forecast {
+	display: none;
+}
+article {
+	margin:  0 auto;
+	padding: 15px;
+	border: .5px solid black;
+	background-color: rgba(240, 206, 102, 0.5);
+}
+article p {
+	font-family: 'PT Serif', sans-serif; 
+}
+.float {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+/************** GALLERY**********************************/
+main .weather-title {
+	text-align: center;
+}
+main {
+	width: 100%;
+	padding-bottom: 20px;
+}
+.grid-box, h2 {
+	text-align: center;
+	margin
+}
+.grid-box img {
+  max-width: 280px;
+}
+.grid-box {
+ 	display: grid;
+ 	justify-content: center;
+ 	grid-gap: 20px;
+}
+.grid-box div {
+	width: 280px;
+	box-shadow: 1px 1px 4px 1px #888;
+	border-radius: 2px;
+	background-color: white;
+	overflow: hidden;
+}
+.grid-box p {
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+/************** STORM CENTER  **********************************/
+hr {
+	width: 90%;
+	margin: 1px;
+}
+.info {
+	margin-top: -10px;
+}
+textarea {
+	column-span: 
+}
+.submit {
+	background: darkred;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	width: 120px;
+	height: 30px;
+	animation: submit 5s infinite;
+	font-weight: bolder;
+}
+@keyframes submit {
+	50% {
+		background-color: gold;
+		color: darkred;
+	}
+}
+input, datalist, textarea, select {
+	background-color: lightyellow;
+	border: 1px solid darkred;
+	border-radius: 5px;
+}
+
+
+/************** cONTACT INFO ************************************/
+.contact-info {
+	display: block;
+	margin: 10px auto;
+	border: 1px solid #000;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+}
+.contact-info h3 {
+	color: darkred;
+}
+.map {
+	display: none;
+}
+.social{
+	text-align: center;
+}
+.social img {
+	width: 35px;
+}
+footer {
+	font-size: 18px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  padding: 0.25rem;
+}
+footer p a, div p a {
+	text-decoration: none;
+}
+.animation {
+	color: gold;
+	animation: light 5s infinite;
+}
+@keyframes light {
+	50% {color: darkred;}
+}

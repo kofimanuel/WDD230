@@ -1,0 +1,197 @@
+body {
+	font-size: 16px;
+	font-family: "Times New Roman", sans-serif;
+	line-height: 1.25;
+	background-color: azure;
+	height: 100%;
+}
+
+header {
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header picture img {
+	width: 100px;
+	height: auto;
+	}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	}
+
+.heading h1 {
+	font-size: 2rem;
+	margin: 0 0 0 17px;
+	color: darkred;
+	}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: 1rem;
+	font-weight: bolder;
+	}
+
+nav {
+  background: darkred;
+  width: 100%;
+  text-align: center;
+  font-family: 'PT Serif', serif;
+}
+
+nav button {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+
+nav .hidden {
+ display: none;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: auto;
+  
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li.active a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: darkred;
+  font-weight: bold;
+}
+.center {
+	text-align: center;
+}
+
+h3.center {
+	display: none;
+	/*text-align: center;*/
+}
+
+.herodiv {
+	position: relative;
+}
+
+.hero {
+	max-width: 100%;
+	height: 300px;
+}
+
+.weather-summary {
+	position: absolute;
+  	top: 1rem;
+  	left: 2rem;
+	padding: 1.5rem;
+	color: white;
+	height: auto;
+	border: 1px solid #000;
+	background: rgba(139, 0, 0, 0.5);
+ 	box-shadow: 0 0 5px #111;
+}
+
+/*.weather-summary h3,*/ .weather-summary h3, p {
+	margin: 0 0 0 0;
+	padding: 5px;
+}
+
+hr {
+	color: black;
+	margin-top: -5px;
+}
+
+h3 .center {
+	display: none;
+}
+
+.forecast {
+	display: none;
+}
+
+article {
+	margin:  0 auto;
+	padding: 15px;
+	border: .5px solid black;
+	background-color: rgba(240, 206, 102, 0.5);
+}
+
+article p {
+	font-family: 'PT Serif', sans-serif; 
+}
+
+.float {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.contact-info {
+	display: block;
+	margin: 10px auto;
+	border: 1px solid #000;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact-info h3 {
+	color: darkred;
+}
+
+.map {
+	display: none;
+}
+.social{
+	text-align: center;
+}
+
+.social img {
+	width: 35px;
+}
+
+footer {
+	font-size: 18px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.animation {
+	color: gold;
+	animation: light 5s infinite;
+}
+@keyframes light {
+	50% {
+		color: darkred;
+	}
+}
+}

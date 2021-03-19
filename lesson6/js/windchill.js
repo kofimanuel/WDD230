@@ -1,3 +1,4 @@
+//Windchill raw JS
 let tempF= parseFloat(document.getElementById('temperature').innerText);
 let windSpeed= parseFloat(document.getElementById('wind').innerText);
 let windChill= 35.74+0.6215*tempF-35.75*windSpeed**0.16+0.4275*tempF*windSpeed**0.16;

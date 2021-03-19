@@ -47,7 +47,7 @@ function adjustRating(rating){
   document.getElementById('rating').innerHTML= rating;
 }
 
-//Lazy load
+/***Lazy load works in a separate file 
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
 const loadImages = (image) => {
@@ -73,6 +73,7 @@ else {
     loadImages(img);
   });
 }
+**/
 
 //JSON for preston town page
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
