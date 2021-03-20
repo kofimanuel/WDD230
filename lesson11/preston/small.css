@@ -86,6 +86,16 @@ nav ul li a:hover {
   color: darkred;
   font-weight: bold;
 }
+
+.author {
+	margin-top: -10px;
+	color: darkred;
+	font-weight: bold;
+}
+
+.author span {
+	color: orangered;
+}
 .center {
 	text-align: center;
 }
@@ -139,6 +149,7 @@ article {
 	padding: 15px;
 	border: .5px solid black;
 	background-color: rgba(240, 206, 102, 0.5);
+	font-size: 18px;
 }
 
 article p {
@@ -146,8 +157,22 @@ article p {
 }
 
 .float {
-	max-width: 300px;
+	max-width: 250px;
 	margin: 0 auto;
+}
+
+.events {
+	border: 10px solid grey;
+	text-align: center;
+	background-color: rgba(240, 206, 102, 0.5);
+	font-size: 19px;
+	width: 70vw;
+	margin: 0 auto;
+	font-family: 'PT Serif', sans-serif; 
+}
+
+.events hr {
+	width: 50%;
 }
 
 .contact-info {

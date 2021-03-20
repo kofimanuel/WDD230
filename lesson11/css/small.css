@@ -130,7 +130,7 @@ section .towns {
 	text-align: center;
 }
 
-/**************PRESTON TOWN*************************************************/
+/*************TOWNS*************************************************/
 .center {
 	text-align: center;
 }
@@ -138,6 +138,8 @@ h3.center {
 	display: none;
 	/*text-align: center;*/
 }
+
+
 .herodiv {
 	position: relative;
 }
@@ -194,7 +196,6 @@ main {
 }
 .grid-box, h2 {
 	text-align: center;
-	margin
 }
 .grid-box img {
   max-width: 280px;
@@ -226,9 +227,7 @@ hr {
 .info {
 	margin-top: -10px;
 }
-textarea {
-	column-span: 
-}
+
 .submit {
 	background: darkred;
 	border: none;
@@ -251,8 +250,27 @@ input, datalist, textarea, select {
 	border-radius: 5px;
 }
 
+#btn {
+	background-color: darkred;
+	font-size: 18px;
+	width: 16%;
+	padding: 12px;
+}
 
-/************** cONTACT INFO ************************************/
+.btnlink{
+	text-decoration: none;
+	color: white;
+}
+
+.thanks {
+	font-family: 'PT Serif', serif;
+	font-size: 18px;
+}
+
+	
+
+
+/************** CONTACT INFO ************************************/
 .contact-info {
 	display: block;
 	margin: 10px auto;

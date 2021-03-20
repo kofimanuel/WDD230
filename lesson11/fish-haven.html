@@ -7,7 +7,7 @@
 		<meta name="description" content="This is a weather site built for preston town, Idaho by Emmanuel Asamoah Adjei in WDD230">
 		<meta name="author" content="Emmanuel Asamoah Adjei">
 		<meta name="keywords" content="weather, site, Preston, town, Idaho">
-		<title>Weather | Preston, Idaho </title>
+		<title>Weather | Fish Haven, Idaho </title>
 		<link rel="shortcut icon" href="./images/fav-icon.ico">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
@@ -31,15 +31,15 @@
 			<button type="button" onclick="navMenu()">&equiv; Menu</button>
 			<ul id="nav-menu" class="hidden">
 				<li><a href="./index.html" title="Homepage">Home</a></li>
-				<li class="active"><a href="./preston.html" title="Preston Community Weather">Preston</a></li>
+				<li><a href="./preston.html" title="Preston Community Weather">Preston</a></li>
 				<li><a href="./soda-springs.html" title="Soda Springs">Soda Springs</a></li>
-				<li><a href="./fish-haven.html" title="Fish Haven">Fish Haven</a></li>
+				<li class="active"><a href="./fish-haven.html" title="Fish Haven">Fish Haven</a></li>
 				<li><a href="./stormcenter.html" title="Storm Center">Storm Center</a></li>
 				<li><a href="./gallery.html" title="Gallery">Gallery</a></li>
 			</ul>
 		</nav>
 		<main>
-			<h2 class="center">Preston Idaho</h2>
+			<h2 class="center">Fish Haven</h2>
 			<div class="herodiv">
 				<picture class="hero">
 					<source media="(max-width: 600px)" srcset="images/hero.jpg">
@@ -60,42 +60,32 @@
 			</div>
 			<h3 class="center">Five Day Forecast</h3>
 			<div class="forecast" id="openForecast">
-				<!--<table>
-					<tr>
-						<th>Sat</th>
-						<th>Sun</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-					</tr>
-					<tr>
-						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>48 &#8451</th>
-						<th><img src="./images/sun.webp" alt="sun" title="Sunny" width="75"><br>37 &#176C</th>
-						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>39 &#176C</th>
-						<th><img src="./images/sun.webp" alt="sun" title="Sunny" width="75"><br>35 &#176C</th>
-						<th><img src="./images/cloudy.webp" alt="cloud" title="cloudy" width="75"><br>50 &#8451</th>
-					</tr>
-				</table>-->
+				
 			</div><br>
 			<article>
 				<picture class="float-container">
 					<img class="float" src="./images/float.jpg" alt="A man in a jacket">
 				</picture>
-				<h3>Founder's Day Fresco</h3>
-				<p class="author">by Charles Xavier</p>
+				<h3>A little about Fish Haven</h3>
+        <p class="author">by Logan Howlett <span class="fade">1 day ago</span></p>
 				<p>Founders Day Fresco is an event that is held at Foundation park every year. I have been taking
 					the festival for granted and have not been properly engaging in perhaps one of the most popular 
-					community events of the year. In response, I contacted Mr. Kentucky, my agent via email and 
+					community events of the year. In response, I contacted Mr. Kentucky, a representative via email and 
 					expressed my desire to serve on the event committee. Well, you guessed it, the phone rings almost 
 					immediately and she promptly asks me to be the event committee chair. Literally, good grief! My 
 					appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated 
 					beyond what I thought I could feel for such a thing and the effort I can put in to render a willing
-					to the committee and people.</p>
+          to the committee and people. The people in the community deserve to be given the best of everything
+          if not every where, their own community should stand up for what they are supposed to get. It is an 
+          an opportunity for me to help the committee and the the community to serve the people. It is amazing
+          working in the committee, especially meeting new people of great worth, investing all kinds of 
+          into the happiness of the community. I love doing what I am doing now and I can boldly say that the 
+          Founder's Day Fresco event held at the founder's park is one of the best, if not the best in Idah.</p>
 			</article><br>
-			<section class="events"> 
+      <section class="events"> 
 				<h3>Upcoming Events</h3>
 				<hr>
-				<p id="jsontxt"></p>
+				<p id="jsontxt3"></p>
 			</section>
 			<div class="contact-info">
 				<h3>tothe<span class="animation">Horizon</span>.com &#127781</h3>
@@ -107,9 +97,9 @@
 				<p>&#9993 <a href="#" title="Contact">contact@tothe<span class="animation">Horizon</span>.com</a></p>
 				<div class="social">
 					<a href="#" target="_blank"><img src="./images/whatsapp2.png" alt="Whatsapp logo"></a>
-					<a href="#" target="_blank"><img src="./images/facebook.png">
-					</div></a>
+					<a href="#" target="_blank"><img src="./images/facebook.png" alt="Facebook logo"></a>
 				</div>
+			</div>
 			</main>
 			<footer>
 				<p>
@@ -119,8 +109,8 @@
 				</p>
 			</footer>
 		</body>
-		<script src="./js/script.js"></script>
-		<script src="./js/eachTown.js"></script>
+		<script src="js/script.js"></script>
+    <script src="./js/eachTown.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	    <script>
 	      WebFont.load({google: { families: [ 'Cambria' ]}})
