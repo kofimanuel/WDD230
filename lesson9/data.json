@@ -1,0 +1,53 @@
+{
+  "businesses": [
+    {
+      "name": "Sinapi Aba Finance Services",
+      "address": "Comm. 1 Site 21",
+      "email": "infodesk@sinapiaba.com",
+      "site": "https://sinapiaba.com",
+      "logo": "sinapiaba.jpg"
+    },
+    {
+      "name": "Ecobank Ghana Tema",
+      "address": "Comm. 1, Meridian Terrain",
+      "email": "ecobankenquiries@ecobank.com",
+      "site": "https://ecobank.com/gh",
+      "logo": "ecobank.jpg"
+    },
+    {
+     "name": "Papaye Fast Food",
+      "address": "Comm. 2, J. Conty",
+      "email": "info@papayegroup.com",
+      "site": "httpS://papayegroup.com",
+      "logo": "papaye.jpg"
+    },
+    {
+     "name": "Papa's Pizza",
+      "address": "Comm. 4, 4th Avenue",
+      "email": "contactpapas@gmail.com",
+      "site": "https://pizarea.com",
+      "logo": "papaspizza.jpg"
+    },
+    {
+     "name": "Zenith Bank Tema",
+      "address": "Comm. 1, Dedesi St.",
+      "email": "info@zenithbank.com.gh",
+      "site": "zenithbank.com.gh",
+      "logo": "zenith.jpg"
+    },
+    {
+      "name": "Hotjobs Africa Tema",
+      "address": "Comm. 1, Padmore St.",
+      "email": "info@hotjobsafrica.org",
+      "site": "https://hotjobsafrica.org.gh",
+      "logo": "hotjobs.jpg"
+    },
+    {
+     "name": "Baj Freight and Logistics Ltd.",
+      "address": "Harbour Road",
+      "email": "berttina.waddle@bajfreight.com",
+      "site": "https://bajfreight.com",
+      "logo": "bajfreight.jpg"
+    }
+  ]
+}
