@@ -7,7 +7,7 @@
 	<meta name="description" content="Chamber of Commerce">
 	<meta name="author" content="Emmanuel Asamoah Adjei">
 	<meta name="keywords" content="Tema">
-	<title>Directory</title>
+	<title>Tema Municipality Chamber | Business Directory</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans+Narrow&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -22,12 +22,13 @@
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./city.html">Tema</a></li>
 				<li class="active"><a href="./directory.html">Directory</a></li>
 				<li><a href="./contact.html">Contact Us</a></li>
-				<li class="push"><a href="./join.html">Join The Chamber</a></li>
+				<li class="push"><a href="./join.html" title="Sign up">Join The Chamber</a></li>
 			</ul>
 		</nav>	
 	</header>
@@ -37,7 +38,7 @@
 				<img class="hero1" src="./images/chamber-hero1.jpg">
 			</picture>
 			<section class="call">
-				<h1>Tema Municipality Chamber of Commerce</h1>
+				<h1>Tema Municipality Chamber</h1>
 				<h2>Look Through our Business Directory</h2>
 				<p>Local businesses in our chamber form an association of business organizations in the community. We select some key members to be part of our board to help plan the attractions promotion of the municipality. We have a shared vision with our business operator in terms of promoting the city. You can join us now with just a click</p>
 				<button class="action-button" type="button"><a href="join.html">Join Us</a></button>
@@ -45,6 +46,9 @@
 		</section>
 		<section class="directories">
 			<h2>Local Business Organizations</h2>
+			<button type="button" onclick="listView()">&equiv; List View</button>
+			<button type="button" onclick="gridView()">&#10063; Grid View</button>
+			<br><br>
 			<div class="cards">
 				
 			</div>

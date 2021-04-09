@@ -7,14 +7,14 @@
 	<meta name="description" content="Chamber of Commerce">
 	<meta name="author" content="Emmanuel Asamoah Adjei">
 	<meta name="keywords" content="Tema">
-	<title>City</title>
+	<title>Tema Municipality City Page</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans+Narrow&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./css/small.css">
-	<link rel="stylesheet" type="text/css" href="./css/medium.css">
-	<link rel="stylesheet" type="text/css" href="./css/large.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/small.css">
+	<link rel="stylesheet" type="text/css" href="css/medium.css">
+	<link rel="stylesheet" type="text/css" href="css/large.css">
 </head>
 <body>
 	<header>
@@ -22,12 +22,13 @@
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
 				<li><a href="./index.html">Home</a></li>
 				<li class="active"><a href="./city.html">Tema</a></li>
 				<li><a href="./directory.html">Directory</a></li>
 				<li><a href="./contact.html">Contact Us</a></li>
-				<li class="push"><a href="./join.html">Join The Chamber</a></li>
+				<li class="push"><a href="./join.html" title="Sign up">Join The Chamber</a></li>
 			</ul>
 		</nav>	
 	</header>

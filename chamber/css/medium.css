@@ -1,3 +1,151 @@
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 32em){
 	
+	body {
+		width: 95%;
+		margin: 0 auto;
+		line-height: 1.2;
+		/*font-family: 'PT Sans Narrow', sans-serif;*/
+	}
+	#closeable {
+		min-width: 900px;
+	}
+	.logo-box {
+	  top: 15px;
+	  left: 32px;
+	}
+	.logo {
+		width: 80px;
+		height: 90px;
+	}
+	.main-nav {
+		display: flex;
+		margin-left: 4.5em;
+	}
+	.push {
+		margin-left: auto;
+		background-color: #B61E1E;
+	}
+	nav {
+		min-width: 900px;
+	}
+	nav button {
+    display: none;
+  }
+  .active {
+		background-color: #42aeff;
+	}
+	.action picture img {
+		min-width: 900px;
+	}
+	.call {
+	position: absolute;
+	width: 60%;
+	top: 120px;
+	left: 19%;
+	margin-top: 10px;
+	}
+	.call h1, .call h2, .call p{
+		margin-top: -2px;
+	}
+	.purpose-goal {
+		margin-top: -20px;
+		padding-top: 20px;
+	}
+	.company {
+		width: 25%;
+		margin: 0 8px;
+		display: inline-block;
+		box-shadow: 3px 3px 3px gray;
+	}
+	.bus-pic {
+		width: 100%;
+	}
+	.contact-info {
+		display: flex;
+	}
+	.address {
+		flex: 1;
+		align-self: flex-end;	
+	}
+	.contacts {
+		flex: 1;
+	}
+	#contact-info2{
+		display: flex;
+		justify-content: center;
+	}
+	#contact-info2 section {
+		flex: 1 1 100%;
+	}
+	.float{
+		box-shadow: 3px 5px 5px gray;
+	}
+	.float1 {
+	float: right;
+	margin-left: 25px;
+	}
+	.float2 {
+		float: left;
+		margin-right: 25px;
+	}
+	table {
+		width: 36%;
+	}
+	.form-section {
+		margin-top: 2px;
+		
+	}
+	form {
+		width: 60%;
+	}
+	.board-list li{
+		display: inline-block;
+	}
+	.contact-section {
+		padding-top: 20px;
+		margin: 2px 0;
+		background-color: rgba(255, 232, 214, .2);
+		display: flex;
+		padding-bottom: 20px;
+		align-items: center;
+		margin-bottom: -12px;
+	}
+	.contact-section div:nth-child(1) {
+		flex: 100%;
+	} 
+	.contact-section section:nth-child(2) {
+		flex: 100%;
+	}
+	#contact-info2{
+		margin-top: -4px; 
+	}
+	.board {
+		min-width: 900px;
+	}
+	.contact-form fieldset {
+		border: none;
+		width: auto;
+	}
+	.confirm {
+		margin-top: auto;
+	} 
+	.confirm button {
+		width: auto;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: 230px 230px 230px;
+		grid-gap: 20px;
+		justify-content: center;
+	}
+
+	.directories button{
+		display: inline;
+	}
+
+	.city-info {
+		min-width: 900px;
+		margin-top: -22px;
+	}
 }

@@ -119,7 +119,8 @@ fetch(requestURL)
   })
 
 //Weather Sumary JSON
-const apiURL= 'https://api.openweathermap.org/data/2.5/weather/?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652&units=imperial';
+const apiURL= 'https://api.openweathermap.org/data/2.5/onecall?/?id=5604473&appid=dc34ee39826da6f5a41cfa8f8f62e652';
+
 fetch(apiURL)
 	.then((response) => response.json())
 	.then((jsObject) => {

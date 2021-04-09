@@ -7,7 +7,7 @@
 	<meta name="description" content="Chamber of Commerce">
 	<meta name="author" content="Emmanuel Asamoah Adjei">
 	<meta name="keywords" content="Tema">
-	<title></title>
+	<title>Sign Up Confirmation</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans+Narrow&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -17,30 +17,41 @@
 	<link rel="stylesheet" type="text/css" href="./css/large.css">
 </head>
 <body>
-	<aside>
-		
-	</aside>
 	<header>
 		<picture class="logo-box">
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./city.html">Tema</a></li>
 				<li><a href="./directory.html">Directory</a></li>
 				<li><a href="./contact.html">Contact Us</a></li>
-				<li class="push"><a href="./join.html">Join The Chamber</a></li>
+				<li class="push"><a href="./join.html" title="Sign up">Join The Chamber</a></li>
 			</ul>
 		</nav>	
 	</header>
 	<main>
-		<h1>Confirmed</h1>
-		<p>Thank you for filling out the form with your information, An email will be sent to you for confirmation. Kindly check your email, open the mail from us and click on the confirmation button. Thank you</p>
-		<button type="button"><a href="./index.html" title="Homepage">Back home</a></button>
+		<section class="action">
+			<picture>
+				<img class="hero1" src="./images/chamber-hero3.jpg">
+			</picture>
+			<section class="call">
+				<h1>Tema Municipality Chamber</h1>
+				<h2>Thank you for Getting this Far</h2>
+				<p>We say thank you and congratulate you for having successfully joined us. You are now part of this amazing communinity. We look foward to working with your brand.</p>
+			</section>
+		</section>
+		<section class="confirm">
+			<h2>Confirmed</h2>
+			<p>Thank you for filling out the form with your information, an email will be sent to you for confirmation. Kindly check your email, open the mail from us and click on the confirmation button. Thank you</p>
+			<button type="button"><a href="./index.html" title="Homepage">Back home</a></button>
+		</section>
 	</main>
 	<footer>
-		<p>&copy;<span id="current-year"></span> | </p>
+		<p>&copy;<span id="current-year"></span>, <a href="./index.html">Tema Municipality Chamber of Commerce</a> | All rights reserved <br>
+		Last updated: <span id="last-time"></span></p>
 	</footer>
 	<script src="./js/script.js"></script>
 </body>

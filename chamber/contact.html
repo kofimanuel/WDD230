@@ -22,12 +22,13 @@
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./city.html">Tema</a></li>
 				<li><a href="./directory.html">Directory</a></li>
 				<li class="active"><a href="./contact.html">Contact Us</a></li>
-				<li class="push"><a href="./join.html">Join The Chamber</a></li>
+				<li class="push"><a href="./join.html" title="Sign up">Join The Chamber</a></li>
 			</ul>
 		</nav>	
 	</header>
@@ -37,7 +38,7 @@
 				<img class="hero1" src="./images/chamber-hero5.jpg">
 			</picture>
 			<section class="call">
-				<h1>Tema Municipality Chamber of Commerce</h1>
+				<h1>Tema Municipality Chamber</h1>
 				<h2>Getting in Touch with the Chamber</h2>
 				<p>We provide an easily accessed contact means by which you can freely ask questions you may have about the chamber. It is our goal to provide the municipallity with easy ways of contact. Our responses are quick and reliable.</p>
 				<button class="action-button" type="button"><a href="#contact-info2">Contact Info</a></button>
@@ -111,13 +112,15 @@
 					<h2>You Can Contact Us Here Too</h2>
 					<p>Fill Out The Form With Your Questions</p>
 				</div>
-				<form action="" method="GET" class="contact-form">
-					<label for="name">Name <input type="text" id="name" name="full-name" required></label>
-					<label for="number">Phone <input type="tel" id="number" name="phone-number"></label>
-					<label for="mail">Email <input type="email" id="mail" name="email" required></label>
-					<label for="comment">Comment</label>
-					<textarea name="comment" id="comment" cols="31" rows="5"></textarea>
-					<input type="submit" value="Send question" class="submit">
+				<form action="confirmation.html" method="GET" class="contact-form">
+					<fieldset>
+						<label for="name">Name <input type="text" id="name" name="full-name" required></label>
+						<label for="number">Phone <input type="tel" id="number" name="phone-number"></label>
+						<label for="mail">Email <input type="email" id="mail" name="email" required></label>
+						<label for="comment">Comment</label>
+						<textarea name="comment" id="comment" cols="31" rows="5"></textarea>
+						<input type="submit" value="Send question" class="submit">
+					</fieldset>
 				</form>
 			</section>
 		</section>

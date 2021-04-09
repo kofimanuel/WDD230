@@ -7,7 +7,7 @@
 	<meta name="description" content="Chamber of Commerce">
 	<meta name="author" content="Emmanuel Asamoah Adjei">
 	<meta name="keywords" content="Tema">
-	<title></title>
+	<title>Sign Up to the Chamber</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans+Narrow&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -22,44 +22,73 @@
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
-				<li><a href="./index.html">Home</a></li>
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
+				<li ><a href="./index.html">Home</a></li>
 				<li><a href="./city.html">Tema</a></li>
 				<li><a href="./directory.html">Directory</a></li>
 				<li><a href="./contact.html">Contact Us</a></li>
-				<li class="active push"><a href="./join.html">Join The Chamber</a></li>
+				<li class="push active"><a href="./join.html" title="Sign up">Join The Chamber</a></li>
 			</ul>
 		</nav>	
 	</header>
 	<main>
-		<form action="./confirmation.html" method="GET">
-			<fieldset>
-				<legend>Personal Information</legend>
-				<label for="fname">First Name<input type="text" name="first-name" id="fname" required></label>
-				<label for="lname">Last Name<input type="text" name="last-name" id="lname" required></label>
-				<label for="title">Title<input type="" name="title" id="title"></label>
-			</fieldset>
-			<fieldset>
-				<legend>Contact Information</legend>
-				<label for="mail">Email<input type="email" name="email" id="mail" required></label>
-				<label for="phone">Cell Phone<input type="tel" name="cell-phone" id="phone"></label>
-			</fieldset>
-			<fieldset>
-				<legend>Business Information</legend>
-				<label for="biz-name">Business Name<input type="text" name="business-name" id="biz-name" required></label>
-				<label for="biz-address">Business Address<input type="address" name="business-address" id="biz-address"></label>
-				<label for="site">Business Website<input type="website" name="website" id="site"></label>
-				<label for="description">Job Description<textarea id="description" name="business-description" cols="30" rows="30" placeholder="Enter your job description here"></textarea></label>
-			</fieldset>
-			<fieldset class="inline-radio">
-				<legend>Membership Levels/Packages</legend>
-				<label for="no-profit"><input type="radio" name="membership-level" id="no-profit" value="non-profit">&nbsp;&nbsp;Non-profit</label>
-				<label for="bronze"><input type="radio" name="membership-level" id="bronze" value="bronze">&nbsp;&nbsp;Bronze</label>
-				<label for="silver"><input type="radio" name="membership-level" id="silver" value="silver">&nbsp;&nbsp;Silver</label>
-				<label for="gold"><input type="radio" name="membership-level" id="gold" value="silver">&nbsp;&nbsp;Gold</label>
-			</fieldset>
-			<input type="submit" value="Submit">
-		</form>
+		<section class="action">
+			<picture>
+				<img class="hero1" src="./images/chamber-hero1.jpg">
+			</picture>
+			<section class="call">
+				<h1>Tema Municipality Chamber</h1>
+				<h2>One Step Away from Joining Us</h2>
+				<p>Tema Municipality Chamber of Commerce gives you the opportuniity to register your business and enjoy the benefits of quality advertisements, promotions and belonging. Businesses in our chamber feel a sense of belonging to the municipality. Fill out the form below to be part of this great community.</p>
+			</section>
+		</section>
+		<section class="form-section">
+			<form action="./confirmation.html" method="GET" class="form">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<label for="fname">First Name<input type="text" name="first-name" id="fname" required pattern="[A-Za-z]"></label>
+					<label for="lname">Last Name<input type="text" name="last-name" id="lname" required></label>
+					<label for="title">Title<input type="text" name="title" list="title-list" id="title"></label>
+					<datalist id="title-list">
+						<option value="Mr.">
+						<option value="Mrs">
+						<option value="Ms.">
+						<option value="Mad.">
+						<option value="Prof.">
+						<option value="Dr.">
+					</datalist><br>
+				</fieldset>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="mail">Email<input type="email" name="email" id="mail" required></label>
+					<label for="phone">Cell Phone<input type="tel" name="cell-phone" id="phone"></label>
+				</fieldset>
+				<fieldset>
+					<legend>Business Information</legend>
+					<label for="biz-name">Business Name<input type="text" name="business-name" id="biz-name" required></label>
+					<label for="biz-address">Business Address<input type="address" name="business-address" id="biz-address"></label>
+					<label for="site">Business Website<input type="website" name="website" id="site"></label>
+					<label for="description">Job Description<textarea id="description" name="business-description" cols="30" row="15" placeholder="Enter your job description here"></textarea></label>
+				</fieldset>
+				<fieldset class="inline-radio">
+					<legend>Membership Levels/Packages</legend>
+					<label for="no-profit"><input type="radio" name="membership-level" id="no-profit" value="non-profit">&nbsp;Non-profit($100)</label>
+					<label for="bronze"><input type="radio" name="membership-level" id="bronze" value="bronze">&nbsp;&nbspBronze($200)</label>
+					<label for="silver"><input type="radio" name="membership-level" id="silver" value="silver">&nbsp;&nbspSilver($400)</label>
+					<label for="gold"><input type="radio" name="membership-level" id="gold" value="silver">&nbsp;&nbspGold($1000)</label>
+					<div class="key">
+						<ul>
+							<em><li>Non-profit- Directory listings</li>
+								<li>Bronze- Directory listings, Business trainings</li>
+								<li>Silver- Directory listings, Business trainings, Social media posts</li>
+								<li>Gold- Directory listings, Business trainings, Social media posts, Luncheon tickets, Sponsorships</li></em>
+						</ul>
+					</div>
+				</fieldset>
+				<input id="button" type="submit" value="Join the chamber">
+			</form>
+		</section>
 	</main>
 	<section class="contact-info">
 	  <section class="contacts">

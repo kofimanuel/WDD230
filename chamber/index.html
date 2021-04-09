@@ -7,7 +7,7 @@
 	<meta name="description" content="Chamber of Commerce">
 	<meta name="author" content="Emmanuel Asamoah Adjei">
 	<meta name="keywords" content="Tema">
-	<title></title>
+	<title>Tema Municipality Chamber of Commerce | Home</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans+Narrow&family=PT+Serif&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -18,14 +18,15 @@
 </head>
 <body>
 	<aside id="closeable">
-			<span onclick="closeAside()" class="close">&times;</span>
+			<p id="alert"> </p><span onclick="closeAside()" class="close">&times;</span>
 	</aside>
 	<header>
 		<picture class="logo-box">
 			<img class="logo" src="./images/logo.png" alt="logo">
 		</picture>
 		<nav>
-			<ul class="main-nav">
+			<button type="button" onclick="navMenu()">&equiv; Menu</button>
+			<ul id="hidden" class="main-nav">
 				<li class="active"><a href="./index.html">Home</a></li>
 				<li><a href="./city.html">Tema</a></li>
 				<li><a href="./directory.html">Directory</a></li>
@@ -40,7 +41,7 @@
 				<img class="hero1" src="./images/chamber-hero1.jpg">
 			</picture>
 			<section class="call">
-				<h1>Tema Municipality Chamber of Commerce</h1>
+				<h1>Tema Municipality Chamber</h1>
 				<h2>Join the Chamber</h2>
 				<p>Tema Municipality Chamber of Commerce gives you the opportuniity to register your business and enjoy the benefits of quality advertisements, promotions and belonging. Businesses in our chamber feel a sense of belonging to the municipality. Click the button below to be part of this great community.</p>
 				<button class="action-button" type="button"><a href="join.html">Join Us</a></button>
@@ -104,9 +105,22 @@
 					<img src="images/company3.jpg" alt="Sinapi Aba Tema Branch" class="bus-pic">
 				</picture>
 				<div>
-					<p>Sinapi Aba Micro-Finance Services<br>Community One(one), <br>Near Tema Development Corp.<br></p>
+					<p>Sinapi Aba Micro-Finance<br>Community One(one), <br>Padmore Street.<br></p>
 				</div>
 			</div>		
+		</section>
+		<section class="weather">
+			<section class="info">
+				<h2>Weather Information</h2>
+				<p><strong>Temperature: <span id="temperature"></span> Kelvins<strong></p>
+				<p><strong>Condition: <span id="condition"></span></strong></p>
+				<p><strong>Humidity: <span id="humidity"></span>%</strong></p>
+			</section>
+			<section class="forecast">
+				<h3 class="center">Weather Forecast</h3>
+				<div class="forecast" id="openForecast">
+				</div>
+			</section>
 		</section>
 		<section class="events">
 			<h2>Upcoming Events</h2>
@@ -162,5 +176,6 @@
 		Last updated: <span id="last-time"></span></p>
 	</footer>
 	<script src="./js/script.js"></script>
+	<script src="js/apicalls.js"></script>
 </body>
 </html>
