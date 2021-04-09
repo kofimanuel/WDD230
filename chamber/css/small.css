@@ -404,7 +404,6 @@ input {
 	text-align: center;
 }
 #openForecast {
-	margin-left: 50px;
 	width: 90%;
 	display: flex;
 	grid-template-columns: repeat(auto-fix, minmax(200px 1fr));
