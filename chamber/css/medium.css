@@ -1,13 +1,10 @@
 @media only screen and (min-width: 32em){
 	
 	body {
-		width: 95%;
-		margin: 0 auto;
-		line-height: 1.2;
-		/*font-family: 'PT Sans Narrow', sans-serif;*/
-	}
-	#closeable {
-		min-width: 900px;
+	width: 95%;
+	margin: 0 auto;
+	line-height: 1.2;
+	/*font-family: 'PT Sans Narrow', sans-serif;*/
 	}
 	.logo-box {
 	  top: 15px;
@@ -26,6 +23,7 @@
 		background-color: #B61E1E;
 	}
 	nav {
+		width: 100%;
 		min-width: 900px;
 	}
 	nav button {
@@ -60,6 +58,9 @@
 	.bus-pic {
 		width: 100%;
 	}
+	.weather {
+		display: flex;
+	}
 	.contact-info {
 		display: flex;
 	}
@@ -93,7 +94,6 @@
 	}
 	.form-section {
 		margin-top: 2px;
-		
 	}
 	form {
 		width: 60%;
@@ -132,18 +132,15 @@
 	.confirm button {
 		width: auto;
 	}
-
 	.cards {
 		display: grid;
 		grid-template-columns: 230px 230px 230px;
 		grid-gap: 20px;
 		justify-content: center;
 	}
-
 	.directories button{
 		display: inline;
 	}
-
 	.city-info {
 		min-width: 900px;
 		margin-top: -22px;

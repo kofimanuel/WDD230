@@ -17,9 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="./css/large.css">
 </head>
 <body>
-	<aside id="closeable">
-			<p id="alert"> </p><span onclick="closeAside()" class="close">&times;</span>
-	</aside>
 	<header>
 		<picture class="logo-box">
 			<img class="logo" src="./images/logo.png" alt="logo">
@@ -110,14 +107,15 @@
 			</div>		
 		</section>
 		<section class="weather">
+			<h2>Weather Information</h2>
 			<section class="info">
-				<h2>Weather Information</h2>
-				<p><strong>Temperature: <span id="temperature"></span> Kelvins<strong></p>
-				<p><strong>Condition: <span id="condition"></span></strong></p>
-				<p><strong>Humidity: <span id="humidity"></span>%</strong></p>
+				<h3>Weather Smmary</h3>
+				<p>Temperature: <span id="temperature"></span> &deg;C</p>
+				<p>Condition: <span id="condition"></span></p>
+				<p>Humidity: <span id="humidity"></span>%</p>
 			</section>
 			<section class="forecast">
-				<h3 class="center">Weather Forecast</h3>
+				<h3>Forecast</h3>
 				<div class="forecast" id="openForecast">
 				</div>
 			</section>
@@ -172,10 +170,10 @@
 		</section>
 	</section>
 	<footer>
-		<p>&copy;<span id="current-year"></span>, <a href="./index.html">Tema Municipality Chamber of Commerce</a> | All rights reserved <br>
+		<p>&copy;<span id="current-year"></span>, <a href="./index.html">Tema Municipality Chamber of Commerce</a> | All Rights Reserved <br>
+		Weather info consumed from <a href="https://openweathermap.org">OpenWeatherMap.org</a><br>
 		Last updated: <span id="last-time"></span></p>
 	</footer>
 	<script src="./js/script.js"></script>
-	<script src="js/apicalls.js"></script>
 </body>
 </html>

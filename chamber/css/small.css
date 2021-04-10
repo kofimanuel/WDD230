@@ -23,14 +23,13 @@ main p {
 }
 /******Aside*******/
 aside {
-	height: 40px;
+	width: 90%;
+	height: 50px;
 	background-color: yellow;
-	margin-bottom:  -35px; 
-}
-#closeable {
-	margin-bottom: -33px;
+	margin-bottom:  -3px;
 }
 .close {
+	margin-top: -20px;
 	padding: 2px;
 	float: right;
 	font-size: 25px;
@@ -101,7 +100,7 @@ nav button {
 /*******Call********/
 .call {
 	text-align: center;
-	margin-top: -250px;
+	margin-top: -280px;
 }
 .call h1 {
 	white-space: nowrap;
@@ -402,17 +401,23 @@ input {
 
 .weather {
 	text-align: center;
+	width: 94%;
+	margin: 0 auto;
 }
-#openForecast {
-	margin-left: 15px;
-	width: 90%;
+.weather h2 {
+	visibility: hidden;
+}
+#openForecast section {
 	display: flex;
-	grid-template-columns: repeat(auto-fix, minmax(200px 1fr));
-	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
 }
-#openForecast div:nth-child(4), #openForecast div:nth-child(5) {
+#openForecast img {
+	width: 100px;
+}
+/*#openForecast div:nth-child(4), #openForecast div:nth-child(5) {
 	display: none;
-}
+}*/
 
 /****Directory***/
 .directories {
